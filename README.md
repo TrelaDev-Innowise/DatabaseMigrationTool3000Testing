@@ -62,24 +62,20 @@ To run the migration tool and apply the migrations to the database, you can eith
    - Ensure the PostgreSQL database is running (via Docker).
    - Run the class, and it will execute the migrations using the provided database credentials (`jdbc:postgresql://localhost:5432/mymigrationtooldb`).
 
-## 📂 Docker Compose
 
-The `docker-compose.yml` file included in the project is pre-configured to set up a **PostgreSQL** database that is compatible with the database connection specified in the `Main.java` class. To quickly test the migrations, you can use Docker Compose to bring up the database.
+## 🧪 Testing the Migration
 
-```yaml
-version: '3'
-services:
-  postgres:
-    image: postgres:13
-    environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: 1234
-      POSTGRES_DB: mymigrationtooldb
-    ports:
-      - "5432:5432"
-    networks:
-      - db_network
+Once the PostgreSQL database is set up and running, the migration tool will apply the migration files in the order they are listed. This ensures that the changes made in each migration are applied sequentially.
 
-networks:
-  db_network:
-    driver: bridge
+## 📈 Logs and Troubleshooting
+
+If you encounter any issues, check the logs in the terminal for potential errors. Common issues may include:
+
+- **Database connection issues**: Make sure the credentials match those in the `docker-compose.yml` file.
+- **Migration file format errors**: Ensure migration files follow the correct naming convention.
+
+## 🧩 Summary
+
+This project provides an example of how to use the **Database Migration Tool 3000** to manage database migrations for PostgreSQL. It includes a sample test database setup with Docker and a set of migration files demonstrating different database relationships. The project can be run either through Docker and the command-line interface or directly from your IDE.
+
+Enjoy using the **Database Migration Tool 3000** for PostgreSQL!
