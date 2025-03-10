@@ -18,8 +18,7 @@ This project is built using **Maven** and contains a test class that demonstrate
 
 1. **Clone this repository**:
     ```bash
-    git clone https://github.com/your-repo/DatabaseMigrationTool3000Testing.git
-    cd DatabaseMigrationTool3000Testing
+    git clone https://github.com/TrelaDev-Innowise/DatabaseMigrationTool3000Testing
     ```
 
 2. **Install Database Migration Tool 3000**:
