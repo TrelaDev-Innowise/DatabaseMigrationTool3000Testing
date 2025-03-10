@@ -22,7 +22,7 @@ This project is built using **Maven** and contains a test class that demonstrate
 
 2. **Install Database Migration Tool 3000** (if not already installed):
    - Either install the tool by building it from the source and installing it in your local Maven repository, or you can use it directly from the JAR file.
-   - Follow the [installation instructions](https://github.com/your-repo/DatabaseMigrationTool3000) for setting it up.
+   - Follow the [installation instructions]([https://github.com/your-repo/DatabaseMigrationTool3000](https://github.com/TrelaDev-Innowise/DatabaseMigrationTool3000)) for setting it up.
 
 3. **Run the project using Docker Compose**:
    The project includes a `docker-compose.yml` file that sets up a PostgreSQL database, which is pre-configured to work with the connection details provided in the `Main.java` file.
