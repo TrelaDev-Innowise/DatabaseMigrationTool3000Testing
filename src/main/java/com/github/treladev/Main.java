@@ -1,6 +1,8 @@
-package com.trela.testing;
+package com.github.treladev;
 
-import com.trela.databasemigrationtool3000.DatabaseMigrationTool3000;
+
+import com.github.treladev.DatabaseMigrationTool3000;
+
 public class Main {
     public static void main(String[] args) {
         String url = "jdbc:postgresql://localhost:5432/mymigrationtooldb";
